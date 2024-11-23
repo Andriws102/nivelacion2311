@@ -26,24 +26,11 @@
                 <label for="date">Fecha de nacimiento: </label>
                 <input type="date" id="date">
                 <br>
-                <label for="comment"></label>
-                <button id="guardar" onclick="saludo2()">Guardar</button>
+                <button id="guardar">Guardar</button>
             </fieldset>
         </form>
         <input type="text" id="result" disabled>
     </div>
-    <script>
-        const guardar = document.getElementById("guardar");
-
-        const saludo2 = () => {
-            let nombre = document.getElementById("name").value;
-            let apellido = document.getElementById("lastname").value;
-            let result = document.getElementById("result");
-            result.value = "Hola " + nombre + " " + apellido;
-        };
-
-        //guardar.addEventListener("click", saludo2);
-        
-    </script>
+    <script src="pagina.js"></script>
 </body>
 </html>
